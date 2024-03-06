@@ -104,11 +104,11 @@ table {
   }
 }
 
-.relative, main, #checklistGrid a {
+.relative, main, .checkbox-item input, #checklistGrid a {
   position: relative;
 }
 
-.absolute {
+.absolute, .checkbox-item input:checked:before, .checkbox-item input:checked:after {
   position: absolute;
 }
 
@@ -177,7 +177,7 @@ table {
           justify-content: flex-start;
 }
 
-.items-center, #checklistGrid a {
+.items-center, .checkbox-item, #checklistGrid a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -569,8 +569,40 @@ nav li {
 }
 
 .checkbox-item input {
-  width: 1.2rem;
+  padding: 10px;
+  width: 1.4rem;
+  height: 1.4rem;
   margin-right: 10px;
+}
+
+.checkbox-item input:checked {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid green;
+  background: green;
+}
+
+.checkbox-item input:checked:before, .checkbox-item input:checked:after {
+  content: "";
+  width: 8px;
+  height: 2px;
+  background: #fff;
+}
+
+.checkbox-item input:checked:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 12px;
+  left: 3px;
+}
+
+.checkbox-item input:checked:after {
+  -webkit-transform: rotate(-47deg);
+          transform: rotate(-47deg);
+  right: 2px;
+  width: 11px;
+  top: 10px;
 }
 
 @media (min-width: 767px) {

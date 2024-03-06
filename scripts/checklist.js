@@ -60,7 +60,7 @@ if (window.location.href.includes("initiation.html")) {
     var initiation_items = [
         { 
             title: "Who is involved?",
-            checkbox_1: "Who should be contacted (what is their contact info)?",
+            checkbox_1: "Who should be contacted?",
             checkbox_2: "How often is communication expected?",
             title_1: "What are the goals?",
             checkbox_3: "What are the company’s goals?",
@@ -90,8 +90,8 @@ if (window.location.href.includes("initiation.html")) {
         for (let i = 1; i <= 2; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -101,8 +101,8 @@ if (window.location.href.includes("initiation.html")) {
         for (let i = 3; i <= 6; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -112,19 +112,19 @@ if (window.location.href.includes("initiation.html")) {
         for (let i = 7; i <= 8; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
 
         checkbox_item.push(`<h2>${item.title_3}</h2>`)
 
-        for (let i = 8; i <= 12; i++) {
+        for (let i = 9; i <= 12; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -134,8 +134,8 @@ if (window.location.href.includes("initiation.html")) {
         for (let i = 13; i <= 14; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -167,8 +167,8 @@ if (window.location.href.includes("planning.html")) {
         for (let i = 1; i <= 3; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -186,7 +186,7 @@ if (window.location.href.includes("execution.html")) {
         { 
             title: "Milestones",
             checkbox_1: "Are we meeting or missing milestones?",
-            checkbox_2: "Are there any tasks, milestones.. at risk of being delayed?",
+            checkbox_2: "Are there any tasks, milestones, etc. at risk of being delayed?",
             title_1: "Communication",
             checkbox_3: "Are there any issues in communication?",
             checkbox_4: "Has the client voiced any concerns? Are their spirits high?",
@@ -209,8 +209,8 @@ if (window.location.href.includes("execution.html")) {
         for (let i = 1; i <= 2; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -220,8 +220,8 @@ if (window.location.href.includes("execution.html")) {
         for (let i = 3; i <= 4; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -231,8 +231,8 @@ if (window.location.href.includes("execution.html")) {
         for (let i = 5; i <= 6; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -242,8 +242,8 @@ if (window.location.href.includes("execution.html")) {
         for (let i = 7; i <= 9; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -279,8 +279,8 @@ if (window.location.href.includes("closeout.html")) {
         for (let i = 1; i <= 3; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -290,8 +290,8 @@ if (window.location.href.includes("closeout.html")) {
         for (let i = 4; i <= 6; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -309,7 +309,9 @@ if (window.location.href.includes("design.html")) {
         { 
             title: "A11Y",
             checkbox_1: "Is there sufficient color contrast?",
-            checkbox_2: ""
+            title_1: "PDP",
+            checkbox_2: "Is there a out-of-stock button design?",
+            checkbox_3: "Is there a sale price design?"
         }
     ]
     
@@ -320,11 +322,22 @@ if (window.location.href.includes("design.html")) {
 
         checkbox_item.push(`<h2>${item.title}</h2>`)
 
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 0; i <= 1; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
+                </div>`);
+            }
+        }
+
+        checkbox_item.push(`<h2>${item.title_1}</h2>`)
+
+        for (let i = 2; i <= 4; i++) {
+            if (item[`checkbox_${i}`]) {
+                checkbox_item.push(`<div class="checkbox-item">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -352,16 +365,19 @@ if (window.location.href.includes("development.html")) {
             checkbox_7: "Where are images sourced?",
             checkbox_8: "Are videos muted on default? Are we building custom controls?",
             checkbox_9: "What video format do they use or prefer (vimeo, youtube, mp4, mov etc..)",
-            checkbox_10: "Image specs? What px ratio should each image be?",
+            checkbox_10: "Image specs? What are the images' aspect ratios?",
             title_3: "Apps",
             checkbox_11: "Which apps are in use?",
             checkbox_12: "Which apps can we omit?",
             title_4: "Sections",
             checkbox_13: "How multi-purpose is each section i.e. do video sections allow a static image? What settings do we include?",
             checkbox_14: "Does each section include global setting options i.e. button style, text color options?",
-            title_5: "A11Y",
-            checkbox_15: "Is there a 'skip-to-main-content' link?",
-            checkbox_16: "Is the site keyboard accessible?"            
+            title_5: "PDP",
+            checkbox_15: "Is the description content coming from the product description? product metafield?",
+            checkbox_16: "Is the shipping information product specific or global?",
+            title_6: "A11Y",
+            checkbox_17: "Is there a 'skip-to-main-content' link?",
+            checkbox_18: "Is the site keyboard accessible?"            
         }
     ]
     
@@ -375,8 +391,8 @@ if (window.location.href.includes("development.html")) {
         for (let i = 1; i <= 3; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -386,8 +402,8 @@ if (window.location.href.includes("development.html")) {
         for (let i = 4; i <= 5; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -397,8 +413,8 @@ if (window.location.href.includes("development.html")) {
         for (let i = 6; i <= 10; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -408,8 +424,8 @@ if (window.location.href.includes("development.html")) {
         for (let i = 11; i <= 12; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -419,19 +435,30 @@ if (window.location.href.includes("development.html")) {
         for (let i = 13; i <= 14; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
 
         checkbox_item.push(`<h2>${item.title_5}</h2>`)
 
-        for (let i = 15; i <= 18; i++) {
+        for (let i = 15; i <= 16; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
+                </div>`);
+            }
+        }
+
+        checkbox_item.push(`<h2>${item.title_6}</h2>`)
+
+        for (let i = 17; i <= 18; i++) {
+            if (item[`checkbox_${i}`]) {
+                checkbox_item.push(`<div class="checkbox-item">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -453,12 +480,12 @@ if (window.location.href.includes("qa-testing.html")) {
             checkbox_3: "Do all images have descriptive alt text?",
             checkbox_4: "Is there only one h1 on the page?",
             checkbox_5: "Are headings in sequential order?",
-            checkbox_6: "Is there a skip to main content link? .....",
+            checkbox_6: "Is there a skip to main content link?",
             title_1: "Browsers",
             checkbox_7: "Does the site visually match design in Safari, Firefox, Opera..etc?",
             checkbox_8: "Is the site keyboard accessible in Safari, Firefox, Opera..etc?",
             checkbox_9: "Does the site resize smoothly (check XL desktop vs tablet vs mobile)",
-            checkbox_10: "Does the site .... on a mobile device (ios vs android)"
+            checkbox_10: "Does the site visually and functionally match design on a mobile device (ios vs android)"
         }
     ]
     
@@ -472,8 +499,8 @@ if (window.location.href.includes("qa-testing.html")) {
         for (let i = 1; i <= 6; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
@@ -483,8 +510,8 @@ if (window.location.href.includes("qa-testing.html")) {
         for (let i = 7; i <= 11; i++) {
             if (item[`checkbox_${i}`]) {
                 checkbox_item.push(`<div class="checkbox-item">
-                    <label for="">${item[`checkbox_${i}`]}</label>
-                    <input type="checkbox">
+                    <label for="checkbox-${i}">${item[`checkbox_${i}`]}</label>
+                    <input type="checkbox" id="checkbox-${i}" name="${item[`checkbox_${i}`]}">
                 </div>`);
             }
         }
